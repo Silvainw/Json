@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <title>JSON - sorteren</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Silvain Wolfrat">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-    <h1>Een selectie van boeken</h1>
+
+<head>
+    <title>JSON beter sorteren</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Silvain Wolfrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="betaal.html">
+            <div class="shoppingcart"><span class="shoppingcart__quantity"></span></div>
+        </a>
+        <h1>Een selectie van boeken</h1>
+    </header>
     <select id="kenmerk">
-        <option value="titel" selected>titel</option>
-        <option value="acteur">acteur(s)</option>
-        <option value="jsDatum">Gemaakt in</option>
-        <option value="paginas">Aantal bladzijden</option>
+        <option value="titelUpper" selected>titel</option>
+        <option value="sortAuthor">auteur(s)</option>
+        <option value="jsDatum">datum uitgave</option>
+        <option value="paginas">aantal bladzijden</option>
         <option value="taal">taal</option>
+        <option value="prijs">prijs</option>
     </select>
 
     <label><input type="radio" name="oplopend" value="1">oplopend</label>
@@ -22,6 +30,7 @@
 
     <div id="uitvoer"></div>
 
-    <script src="sorteer.js"></script>
-    </body>
+    <script src="js/boekenwinkel.js"></script>
+</body>
+
 </html>
